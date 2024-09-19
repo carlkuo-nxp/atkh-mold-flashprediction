@@ -11,7 +11,7 @@ with st.expander('Data'):
   df
 
   st.write('**Input Variable**')
-  X = df.drop('cat_ppm')
+  X = df.drop('cat_ppm', axis=1)
   X
 
   st.write('**Output Variable**')
