@@ -57,4 +57,5 @@ data = { 'Leadframesupplier' : Leadframesupplier,
         ' Leadframe12NC' :  Leadframe12NC}
 input_df = pd.DataRame(data, index=[0])
 input_label_encoding = pd.concat([input_df, X], axis=0)
+input_label_encoding
 
