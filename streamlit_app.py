@@ -39,3 +39,22 @@ with st.sidebar:
   Outline = st.slider('Outline', 0, 55, 25 )
   Subpackage = st.slider('Subpackage', 0, 93, 25)
   Leadframe12NC = st.slider('Leadframe 12NC', 0, 85, 25)
+
+##Create a dataframe for the input features##
+data = { 'Leadframesupplier' : Leadframesupplier,
+        'Rough' : Rough,
+        'Leaddesign' : Leaddesign,
+        'Square' : Square,
+        'Dimple' : Dimple,
+        'Wiretype' : Wiretype,
+        'Compound' : Compound,
+        'Taping' : Taping,
+        'Area' : Area,
+        'Unitperstrip' : Unitperstrip,
+        'AssemblyCG' : AssemblyCG,
+        'Outline' : Outline,
+        'Subpackage' : Subpackage,
+        ' Leadframe12NC' :  Leadframe12NC}
+input_df = pd.DataRame(data, index=[0])
+input_label_encoding = pd.concat([input_df, X], axis=0)
+
