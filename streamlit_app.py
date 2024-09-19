@@ -22,4 +22,7 @@ with st.expander('Data visualization'):
   st.scatter_chart(data=df, x='Area', y='Unit per strip', color='cat_ppm')
 
 
-print(df.dtypes)
+##Data preparation##
+with st.sidebar:
+  st.header('Input features')
+  AssemblyCG = st.slider('Assembly CG', 0, 55, 25 )
