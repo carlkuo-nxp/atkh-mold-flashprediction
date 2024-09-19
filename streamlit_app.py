@@ -25,7 +25,7 @@ with st.expander('Data visualization'):
 ##Data preparation##
 with st.sidebar:
   st.header('Input features')
-  Leadframe supplier = st.selectbox('Leadframe supplier',('0','1'))
+  Leadframesupplier = st.selectbox('Leadframe supplier',('0','1'))
   AssemblyCG = st.slider('Assembly CG', 0, 55, 25 )
   Outline = st.slider('Outline', 0, 55, 25 )
   Subpackage = st.slider('Subpackage', 0, 93, 25)
