@@ -17,3 +17,6 @@ with st.expander('Data'):
   st.write('**Output Variable**')
   Y = df.cat_ppm
   Y
+
+with st.expander('Data visualization')
+  st.scatter_chart(data=df, x='Area', y='Unit per strip', color='cat_ppm')
