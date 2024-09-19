@@ -30,7 +30,7 @@ with st.sidebar:
   Leaddesign = st.selectbox('Lead design; long-half etching=0 / long-inner lead=1 / normal=2',('0','1','2'))
   Square = st.selectbox('IC is a square? not a square=0 / a square=1',('0','1'))
   Dimple = st.selectbox('Dimple design? ; Deep=0 / No=1 / Normal=2',('0','1','2'))
-  Wiretype = st.selectbox('Wire type ; Au=0 / Cu=1'('0','1'))
+  Wiretype = st.selectbox('Wire type ; Au=0 / Cu=1',('0','1'))
   Compound = st.selectbox('Compound',('0','1','2','3','4','5'))
   Taping = st.selectbox('Taping; post-taping=0 / pre-taping=1',('0','1'))
   Area = st.slider('Area', 2.295, 100.000, 10.000 )
