@@ -9,3 +9,11 @@ with st.expander('Data'):
   st.write('**Raw data**')
   df = pd.read_csv('label_encoding_std-Original_V01.csv')
   df
+
+  st.write('**Input Variable**')
+  X = df.drop('cat_ppm')
+  X
+
+  st.write('**Output Variable**')
+  Y = df.cat_ppm
+  Y
