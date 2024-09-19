@@ -56,6 +56,14 @@ data = { 'Leadframesupplier' : Leadframesupplier,
         'Subpackage' : Subpackage,
         ' Leadframe12NC' :  Leadframe12NC}
 input_df = pd.DataFrame(data, index=[0])
-input_label_encoding = pd.concat([input_df, X], axis=0)
-input_label_encoding
+input_label_encoding = pd.concat([input_df, X], axis=0) ##axis=0 append by row, o.w. axis=1 append by column##
+
+with st.expander('Input  features'):
+ st.write('**Input data**')
+ input_df
+ st.write('**Combined all input data**')
+ input_label_encoding
+ 
+
+
 
