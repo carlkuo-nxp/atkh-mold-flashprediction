@@ -60,7 +60,7 @@ input_label_encoding = pd.concat([input_df, X], axis=0) ##axis=0 append by row, 
 
 ##Encode X ##
 encode = ['Leadframesupplier','Rough','Leaddesign','Square','Dimple','Wiretype','Compound','Taping']
-df_input = pd.get_dummy(input_label_encoding, prefix=encode)
+df_input = pd.get_dummies(input_label_encoding, prefix=encode)
 input_row = df_input[:1]
 
 
