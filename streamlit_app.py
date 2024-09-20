@@ -35,7 +35,7 @@ with st.sidebar:
   Taping = st.selectbox('Taping; post-taping=0 / pre-taping=1',('0','1'))
   Area = st.slider('Area', 2.295, 100.000, 10.000 )
   Unitperstrip = st.slider('Unit per strip', 110, 3990, 500)
-  Assembly CG = st.slider('Assembly CG', 0, 55, 25 )
+  AssemblyCG = st.slider('Assembly CG', 0, 55, 25 )
   Outline = st.slider('Outline', 0, 55, 25 )
   Subpackage = st.slider('Subpackage', 0, 93, 25)
   Leadframe12NC = st.slider('Leadframe 12NC', 0, 85, 25)
