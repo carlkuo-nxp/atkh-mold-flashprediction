@@ -43,18 +43,18 @@ with st.sidebar:
 ##Create a dataframe for the input features##
 data = { 'Leadframesupplier' : Leadframesupplier,
         'Rough' : Rough,
-        'Leaddesign' : Leaddesign,
+        'Lead design' : Leaddesign,
         'Square' : Square,
         'Dimple' : Dimple,
-        'Wiretype' : Wiretype,
+        'Wire type' : Wiretype,
         'Compound' : Compound,
         'Taping' : Taping,
         'Area' : Area,
-        'Unitperstrip' : Unitperstrip,
-        'AssemblyCG' : AssemblyCG,
+        'Unit per strip' : Unitperstrip,
+        'Assembly CG' : AssemblyCG,
         'Outline' : Outline,
         'Subpackage' : Subpackage,
-        ' Leadframe12NC' :  Leadframe12NC}
+        'Leadframe 12NC' :  Leadframe12NC}
 input_df = pd.DataFrame(data, index=[0])
 input_label_encoding = pd.concat([input_df, X], axis=0) ##axis=0 append by row, o.w. axis=1 append by column##
 
