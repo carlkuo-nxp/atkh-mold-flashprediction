@@ -133,8 +133,8 @@ df_prediction_proba
 #moldflash_response = np.array(['A(<1500ppm)','B(1500~4700ppm)','C(>4700ppm)'])  ##bar chart
 #st.success(str(moldflash_response[prediction][0]))
 
-print(dict(zip(X_raw.columns, moldflash_model.feature_importances_)))
-
+feat_importances = dict(zip(X_raw.columns, moldflash_model.feature_importances_))
+feat_importances
 
 #feat_importances = pd.Series(moldflash_model.feature_importances_, index=X_raw.columns)
 #feat_importances.nlargest(5).plot(kind='barh')
