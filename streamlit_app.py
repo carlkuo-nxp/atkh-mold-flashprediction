@@ -25,7 +25,7 @@ with st.expander('Data visualization'):
 ##Data preparation##
 with st.sidebar:
   st.header('Input features')
-  Leadframe supplier = st.selectbox('Leadframe supplier; MHT=1 / HDS=0',('0','1'))
+  Leadframesupplier = st.selectbox('Leadframe supplier; MHT=1 / HDS=0',('0','1'))
   Rough = st.selectbox('Rough design? ; Yes=1 / No=0' ,('0','1'))
   Lead design = st.selectbox('Lead design; long-half etching=0 / long-inner lead=1 / normal=2',('0','1','2'))
   Square = st.selectbox('IC is a square? no=0 / yes=1',('0','1'))
@@ -41,7 +41,7 @@ with st.sidebar:
   Leadframe12NC = st.slider('Leadframe 12NC', 0, 85, 25)
 
 ##Create a dataframe for the input features##
-data = { 'Leadframesupplier' : Leadframe supplier,
+data = { 'Leadframesupplier' : Leadframesupplier,
         'Rough' : Rough,
         'Leaddesign' : Leaddesign,
         'Square' : Square,
