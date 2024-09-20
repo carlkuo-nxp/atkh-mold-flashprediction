@@ -88,7 +88,7 @@ with st.expander('Input  features'):
 
 
 ##Model training and inference##
-moldflash_model = DecisionTreeClassifier(criterion='gini', max_leaf_nodes=num)
+moldflash_model = DecisionTreeClassifier(criterion='gini', max_leaf_nodes=10)
 moldflash_model.fit(X_raw, Y_raw)
 
 prediction = moldflash_model.predict(input_df)
