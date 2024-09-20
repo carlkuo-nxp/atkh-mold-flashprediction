@@ -58,13 +58,22 @@ data = { 'Leadframesupplier' : Leadframesupplier,
 input_df = pd.DataFrame(data, index=[0])
 input_label_encoding = pd.concat([input_df, X], axis=0) ##axis=0 append by row, o.w. axis=1 append by column##
 
+##Encode X ##
+encode = ['Leadframesupplier','Rough','Leaddesign','Square','Dimple','Wiretype','Compound','Taping']
+df_input = pd.get_dummy(input_label_encoding, prefix=encode)
+input_row = df_input[:1]
+
+
+
 with st.expander('Input  features'):
  st.write('**Input data**')
  input_df
  st.write('**Combined all input data**')
  input_label_encoding
+ st.write('**Encoded input data**')
+ input_row
 
-##Encode (if necessary)
+
 
 
 
