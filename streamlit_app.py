@@ -133,8 +133,8 @@ df_prediction_proba
 #moldflash_response = np.array(['A(<1500ppm)','B(1500~4700ppm)','C(>4700ppm)'])
 #st.success(str(moldflash_response[prediction][0]))
 
-importances = moldflash_model.feature_importances
-importances 
+importances = moldflash_model.feature_importances_
+importances
 ######################tips
 #1. input variable order should be the same as raw data
 
