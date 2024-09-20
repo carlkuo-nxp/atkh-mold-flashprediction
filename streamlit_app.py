@@ -130,11 +130,13 @@ st.subheader('Predicted Mold Flash')
 #             }, hide_index=True)
 
 df_prediction_proba
+
 #moldflash_response = np.array(['A(<1500ppm)','B(1500~4700ppm)','C(>4700ppm)'])  ##bar chart
 #st.success(str(moldflash_response[prediction][0]))
 
 feat_importances = dict(zip(X_raw.columns, moldflash_model.feature_importances_))
-feat_importances
+feat_importances_1 = pd.DataFrame(feat_importances)
+feat_importances_1
 
 #feat_importances = pd.Series(moldflash_model.feature_importances_, index=X_raw.columns)
 #feat_importances.nlargest(5).plot(kind='barh')
@@ -145,12 +147,6 @@ feat_importances
 #feat_importances.plot(kind='bar',figsize=(8,6))
 #feat_importances
 
-importances = moldflash_model.feature_importances_
-feature_names = X_raw.columns
-indices = np.argsort(importances)[::-1]
-print("Feature Importance Ranking:")
-for i in range(X_raw.shape[1]):
-    print(f"{i+1}. {feature_names[indices[i]]}: {importances[indices[i]]}")
 
 
 
