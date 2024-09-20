@@ -80,7 +80,7 @@ with st.expander('Input  features'):
 #                'B':1,
 #                'C':2}
 #def target_encode(val):
-  return target_mapper[val]
+#  return target_mapper[val]
 
 #Y=Y_raw.apply(target_encode)
 #Y
