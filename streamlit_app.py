@@ -134,7 +134,12 @@ df_prediction_proba
 #st.success(str(moldflash_response[prediction][0]))
 
 importances = moldflash_model.feature_importances_
-importances
+feature_names = X_raw.columns
+indices = np.argsort(importances)[::-1]
+print("Feature Importance Ranking:")
+for i in range(X_raw.shape[1]):
+  print(f"{i+1}.{feature_names[indices[i]]}: {importances[indices[i]]}")
+
 ######################tips
 #1. input variable order should be the same as raw data
 
