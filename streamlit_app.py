@@ -76,15 +76,15 @@ with st.expander('Input  features'):
 #input_row = df_input[:1]
 
 ##Encode Y ## (testing)
-target_mapper = {'A':0,
+#target_mapper = {'A':0,
                 'B':1,
                 'C':2}
-def target_encode(val):
+#def target_encode(val):
   return target_mapper[val]
 
-Y=Y_raw.apply(target_encode)
-Y
-Y_raw
+#Y=Y_raw.apply(target_encode)
+#Y
+#Y_raw
 
 
 
