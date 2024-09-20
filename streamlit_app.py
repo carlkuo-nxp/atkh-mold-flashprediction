@@ -131,7 +131,7 @@ st.dataframe(df_prediction_proba,
 
 moldflash_response = np.array(['A(<1500ppm)','B(1500~4700ppm)','C(>4700ppm)'])
 st.success(str(moldflash_response[prediction][0]))
- 
+  
 ######################tips
 #1. input variable order should be the same as raw data
 
