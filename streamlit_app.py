@@ -100,7 +100,7 @@ df_prediction_proba.columns = ['A(<1500ppm)','B(1500~4700ppm)','C(>4700ppm)']
 df_prediction_proba.rename(columns={0:'A(<1500ppm)',
                                    1: 'B(1500~4700ppm)',
                                    2: 'C(>4700ppm)'})
-#df_prediction_proba
+df_prediction_proba
 
 ##Display predicted mold flash
 st.subheader('Predicted Mold Flash')
