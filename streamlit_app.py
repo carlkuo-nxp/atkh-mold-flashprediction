@@ -96,7 +96,7 @@ prediction_proba = moldflash_model.predict_proba(input_df)
 prediction_proba.columns
 
 df_prediction_proba = pd.DataFrame(prediction_proba)
-df_prediction_proba.columns = ['A','B','C)']
+df_prediction_proba.columns = ['A','B','C']
 df_prediction_proba.rename(columns={0:'A',
                                    1: 'B',
                                    2: 'C'})
