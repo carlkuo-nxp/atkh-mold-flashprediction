@@ -54,7 +54,7 @@ data = { 'Leadframe supplier' : Leadframe supplier,
         'Assembly CG' : Assembly CG,
         'Outline' : Outline,
         'Subpackage' : Subpackage,
-        'Leadframe 12NC' :  Leadframe 12NC}
+        'Leadframe12NC' :  Leadframe 12NC}
 input_df = pd.DataFrame(data, index=[0])
 input_label_encoding = pd.concat([input_df, X], axis=0) ##axis=0 append by row, o.w. axis=1 append by column##
 
