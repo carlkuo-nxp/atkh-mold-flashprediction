@@ -11,12 +11,12 @@ with st.expander('Data'):
   df
 
   st.write('**Input Variable**')
-  X = df.drop('cat_ppm', axis=1)
-  X
+  X_raw = df.drop('cat_ppm', axis=1)
+  X_raw
 
   st.write('**Output Variable**')
-  Y = df.cat_ppm
-  Y
+  Y_raw = df.cat_ppm
+  Y_raw
 
 with st.expander('Data visualization'):
   st.scatter_chart(data=df, x='Area', y='Unitperstrip', color='cat_ppm')
@@ -56,12 +56,15 @@ data = { 'Leadframesupplier' : Leadframesupplier,
         'Subpackage' : Subpackage,
         'Leadframe12NC' :  Leadframe12NC}
 input_df = pd.DataFrame(data, index=[0])
-input_label_encoding = pd.concat([input_df, X], axis=0) ##axis=0 append by row, o.w. axis=1 append by column##
+input_label_encoding = pd.concat([input_df, X_raw], axis=0) ##axis=0 append by row, o.w. axis=1 append by column##
 
 ##Encode X ## (testing)
-encode = ['Leadframesupplier','Rough','Leaddesign','Square','Dimple','Wiretype','Compound','Tape']
-df_input = pd.get_dummies(input_label_encoding, prefix=encode)
-input_row = df_input[:1]
+#encode = ['Leadframesupplier','Rough','Leaddesign','Square','Dimple','Wiretype','Compound','Tape']
+#df_input = pd.get_dummies(input_label_encoding, prefix=encode)
+#input_row = df_input[:1]
+
+##Encode Y ## (testing)
+
 
 
 
