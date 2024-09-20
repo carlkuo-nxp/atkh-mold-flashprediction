@@ -19,7 +19,7 @@ with st.expander('Data'):
   Y
 
 with st.expander('Data visualization'):
-  st.scatter_chart(data=df, x='Area', y='Unit per strip', color='cat_ppm')
+  st.scatter_chart(data=df, x='Area', y='Unitperstrip', color='cat_ppm')
 
 
 ##Data preparation##
