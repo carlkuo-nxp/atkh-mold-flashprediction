@@ -38,7 +38,7 @@ with st.sidebar:
   Assembly CG = st.slider('Assembly CG', 0, 55, 25 )
   Outline = st.slider('Outline', 0, 55, 25 )
   Subpackage = st.slider('Subpackage', 0, 93, 25)
-  Leadframe 12NC = st.slider('Leadframe 12NC', 0, 85, 25)
+  Leadframe12NC = st.slider('Leadframe 12NC', 0, 85, 25)
 
 ##Create a dataframe for the input features##
 data = { 'Leadframe supplier' : Leadframe supplier,
