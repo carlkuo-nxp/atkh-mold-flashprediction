@@ -22,7 +22,7 @@ with st.expander('Data visualization'):
   st.scatter_chart(data=df, x='Area', y='Unitperstrip', color='cat_ppm')
 
 
-##Data preparation##
+##Input features##
 with st.sidebar:
   st.header('Input features')
   Leadframesupplier = st.selectbox('Leadframe supplier; MHT=1 / HDS=0',('0','1'))
@@ -58,21 +58,31 @@ data = { 'Leadframesupplier' : Leadframesupplier,
 input_df = pd.DataFrame(data, index=[0])
 input_label_encoding = pd.concat([input_df, X_raw], axis=0) ##axis=0 append by row, o.w. axis=1 append by column##
 
+with st.expander('Input  features'):
+ st.write('**Input data**')
+ input_df
+ st.write('**Combined all input data**')
+ input_label_encoding
+
+##Data preparation##
 ##Encode X ## (testing)
 #encode = ['Leadframesupplier','Rough','Leaddesign','Square','Dimple','Wiretype','Compound','Tape']
 #df_input = pd.get_dummies(input_label_encoding, prefix=encode)
 #input_row = df_input[:1]
 
 ##Encode Y ## (testing)
+target_mapper = {'A':0,
+                'B':1,
+                'C':2}
+def target_encode(val):
+  return target_mapper[val]
+
+y=y_raw.apply(target_encode)
+y
+y_raw
 
 
 
-
-with st.expander('Input  features'):
- st.write('**Input data**')
- input_df
- st.write('**Combined all input data**')
- input_label_encoding
 
 
 
