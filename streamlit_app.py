@@ -93,7 +93,7 @@ moldflash_model.fit(X_raw, Y_raw)
 
 prediction = moldflash_model.predict(input_df)
 prediction_proba = moldflash_model.predict_proba(input_df)
-prediction_proba.columns
+prediction_proba
 
 df_prediction_proba = pd.DataFrame(prediction_proba)
 df_prediction_proba.columns = ['A','B','C']
