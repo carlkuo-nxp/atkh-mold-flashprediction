@@ -63,7 +63,8 @@ with st.expander('Input  features'):
  input_df
  st.write('**Combined all input data**')
  input_label_encoding
- 
+
+##Encode (if necessary)
 
 
 
