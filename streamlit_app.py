@@ -103,7 +103,7 @@ df_prediction_proba.rename(columns={0:'A',
 df_prediction_proba
 
 ######################tips
-1. input variable order should be the same as raw data
+#1. input variable order should be the same as raw data
 
 
 
