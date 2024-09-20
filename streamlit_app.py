@@ -109,21 +109,21 @@ st.dataframe(df_prediction_proba,
                'A(<1500ppm)':st.column_config.ProgressColumn(
                  'A(<1500ppm)',
                  format='%f',
-                 width='large',
+                 width='medium',
                  min_value=0,
                  max_value=1
                ),
                'B(1500~4700ppm)':st.column_config.ProgressColumn(
                  'B(1500~4700ppm)',
                  format='%f',
-                 width='large',
+                 width='medium',
                  min_value=0,
                  max_value=1
                ),
                'C(>4700ppm)':st.column_config.ProgressColumn(
                  'C(>4700ppm)',
                  format='%f',
-                 width='large',
+                 width='medium',
                  min_value=0,
                  max_value=1
                ),
