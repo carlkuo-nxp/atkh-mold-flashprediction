@@ -38,7 +38,7 @@ with st.sidebar:
   Assembly CG = st.slider('Assembly CG', 0, 55, 25 )
   Outline = st.slider('Outline', 0, 55, 25 )
   Subpackage = st.slider('Subpackage', 0, 93, 25)
-  Leadframe12NC = st.slider('Leadframe 12NC', 0, 85, 25)
+  Leadframe 12NC = st.slider('Leadframe 12NC', 0, 85, 25)
 
 ##Create a dataframe for the input features##
 data = { 'Leadframe supplier' : Leadframe supplier,
@@ -54,7 +54,7 @@ data = { 'Leadframe supplier' : Leadframe supplier,
         'Assembly CG' : Assembly CG,
         'Outline' : Outline,
         'Subpackage' : Subpackage,
-        'Leadframe12NC' :  Leadframe 12NC}
+        'Leadframe 12NC' :  Leadframe 12NC}
 input_df = pd.DataFrame(data, index=[0])
 input_label_encoding = pd.concat([input_df, X], axis=0) ##axis=0 append by row, o.w. axis=1 append by column##
 
