@@ -93,7 +93,6 @@ moldflash_model.fit(X_raw, Y_raw)
 
 prediction = moldflash_model.predict(input_df)
 prediction_proba = moldflash_model.predict_proba(input_df)
-prediction_proba
 
 df_prediction_proba = pd.DataFrame(prediction_proba)
 df_prediction_proba.columns = ['A(<1500ppm)','B(1500~4700ppm)','C(>4700ppm)']
