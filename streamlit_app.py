@@ -135,8 +135,7 @@ df_prediction_proba
 #st.success(str(moldflash_response[prediction][0]))
 
 feat_importances = dict(zip(X_raw.columns, moldflash_model.feature_importances_))
-feat_importances_1 = pd.DataFrame(feat_importances)
-feat_importances_1
+feat_importances
 
 #feat_importances = pd.Series(moldflash_model.feature_importances_, index=X_raw.columns)
 #feat_importances.nlargest(5).plot(kind='barh')
