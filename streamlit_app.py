@@ -77,9 +77,9 @@ target_mapper = {'A':0,
 def target_encode(val):
   return target_mapper[val]
 
-y=y_raw.apply(target_encode)
-y
-y_raw
+Y=Y_raw.apply(target_encode)
+Y
+Y_raw
 
 
 
