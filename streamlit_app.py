@@ -109,26 +109,27 @@ st.dataframe(df_prediction_proba,
                'A(<1500ppm)':st.column_config.ProgressColumn(
                  'A(<1500ppm)',
                  format='%f',
-                 width='medium',
+                 width='large',
                  min_value=0,
                  max_value=1
                ),
                'B(1500~4700ppm)':st.column_config.ProgressColumn(
                  'B(1500~4700ppm)',
                  format='%f',
-                 width='medium',
+                 width='large',
                  min_value=0,
                  max_value=1
                ),
                'C(>4700ppm)':st.column_config.ProgressColumn(
                  'C(>4700ppm)',
                  format='%f',
-                 width='medium',
+                 width='large',
                  min_value=0,
                  max_value=1
                ),
              }, hide_index=True)
 
+df_prediction_proba
 moldflash_response = np.array(['A(<1500ppm)','B(1500~4700ppm)','C(>4700ppm)'])
 st.success(str(moldflash_response[prediction][0]))
   
