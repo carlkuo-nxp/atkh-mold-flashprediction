@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import matplotlib as plt
 from sklearn import preprocessing
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
@@ -134,11 +133,14 @@ df_prediction_proba
 #moldflash_response = np.array(['A(<1500ppm)','B(1500~4700ppm)','C(>4700ppm)'])  ##bar chart
 #st.success(str(moldflash_response[prediction][0]))
 
-
-feat_importances = pd.DataFrame(moldflash_model.feature_importances_, index= X_raw.columns, columns=["Importance"])
-feat_importances.sort_values(by='Importance', ascending=False, inplace=True)
-feat_importances.plot(kind='bar',figsize=(8,6))
+feat_importances = pd.Series(moldflash_model.feature_importances_, index=X_raw.columns)
+feat_importances.nlargest(5).plot(kind='barh')
 feat_importances
+
+#feat_importances = pd.DataFrame(moldflash_model.feature_importances_, index= X_raw.columns, columns=["Importance"])
+#feat_importances.sort_values(by='Importance', ascending=False, inplace=True)
+#feat_importances.plot(kind='bar',figsize=(8,6))
+#feat_importances
 
 #importances = moldflash_model.feature_importances_
 #feature_names = X_raw.columns
