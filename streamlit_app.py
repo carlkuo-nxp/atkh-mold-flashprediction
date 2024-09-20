@@ -96,10 +96,10 @@ prediction_proba = moldflash_model.predict_proba(input_df)
 prediction_proba.columns
 
 df_prediction_proba = pd.DataFrame(prediction_proba)
-df_prediction_proba.columns = ['A(<1500ppm)','B(1500~4700ppm)','C(>4700ppm)']
-df_prediction_proba.rename(columns={0:'A(<1500ppm)',
-                                   1: 'B(1500~4700ppm)',
-                                   2: 'C(>4700ppm)'})
+df_prediction_proba.columns = ['A','B','C)']
+df_prediction_proba.rename(columns={0:'A',
+                                   1: 'B',
+                                   2: 'C'})
 df_prediction_proba
 
 ######################tips
