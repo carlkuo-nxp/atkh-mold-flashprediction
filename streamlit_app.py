@@ -137,9 +137,9 @@ importances = moldflash_model.feature_importances_
 feature_names = X_raw.columns
 indices = np.argsort(importances)[::-1]
 print("Feature Importance Ranking:")
-for i in range(X_raw.shape[1]):
-  print(f"{i+1}.{feature_names[indices[i]]}: {importances[indices[i]]}")
-importances
+for i in range(x.shape[1]):
+    print(f"{i+1}. {feature_names[indices[i]]}: {importances[indices[i]]}")
+
 ######################tips
 #1. input variable order should be the same as raw data
 
