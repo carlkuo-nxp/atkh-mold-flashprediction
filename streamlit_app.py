@@ -139,7 +139,7 @@ indices = np.argsort(importances)[::-1]
 print("Feature Importance Ranking:")
 for i in range(X_raw.shape[1]):
   print(f"{i+1}.{feature_names[indices[i]]}: {importances[indices[i]]}")
-
+importances
 ######################tips
 #1. input variable order should be the same as raw data
 
