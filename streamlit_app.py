@@ -7,9 +7,9 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn import metrics
 from sklearn.metrics import confusion_matrix
 
-st.title('Machine Learning App')
+st.title('ATKH Mold Flash Prediction APP')
 
-st.write('This is a machine learning app and builds a machine learning model!')
+st.write('This is a app to visulize & predict mold flash PPM by product design!')
 
 with st.expander('Data'):
   st.write('**Raw data**')
